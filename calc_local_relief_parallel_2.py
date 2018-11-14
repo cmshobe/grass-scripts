@@ -15,6 +15,10 @@ that seems perfectly realistic.
 THIS SCRIPT WILL WORK IN PARALLEL SUCH THAT EACH LOCAL RELIEF CALCULATION
 RUNS ON A DIFFERENT CORE IN PARALLEL. THIS MEANS AT LEAST FOUR CORES ARE
 REQUIRED FOR THIS SCRIPT TO WORK!
+
+***this script does each relief calculation in parallel, but does not 
+divide the DEMS into tiles. Therefore the computation time for the larger
+relief windows (2.5 km and 5 km) is unfeasibly long.
 """
 import os
 import multiprocessing as multi

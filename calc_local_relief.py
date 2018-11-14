@@ -11,6 +11,9 @@ to ensure that all points have full data availability.
 
 Note that ocean-adjacent points will have a lot of zeros, but
 that seems perfectly realistic.
+
+***this script technically works but runs extremely slowly because nothing
+is parallelized.
 """
 import sys
 import os
