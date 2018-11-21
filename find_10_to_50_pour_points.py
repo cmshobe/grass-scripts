@@ -8,7 +8,7 @@ Created on Mon Nov 19 09:11:26 2018
 Script for acquiring pour point candidates and [mostly] automatically
 stripping them down to only the ones I need
 """
-from grasspygrass.modules.shortcuts import raster as r
+from grass.pygrass.modules.shortcuts import raster as r
 from grass.pygrass.modules.shortcuts import vector as v
 
 #startingfrom flow accum raster

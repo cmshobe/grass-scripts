@@ -48,7 +48,6 @@ height_of_tiles = 7208 #36040/5
 overlap = 500 #cells; 2500 m / 10 m per cell = 250 cells * 2
 
 #then, tile the raster
-#for some reason this gives 3 columns but I don't need the third
 output_base_name = '2point5km_tile'
 r.tile(input=aoi_dem, output=output_base_name, 
        width=width_of_tiles, height=height_of_tiles, 
