@@ -10,5 +10,5 @@ GRASS script to calculate a local slope map
 from grass.pygrass.modules.shortcuts import raster as r
 
 elev_raster = 'small_crop_buffer'
-output_slope_map = 'small_crop_buffer_slope'
-r.slope.aspect(elevation=elev_raster, slope=output_slope_map)
+output_slope_map = 'small_crop_buffer_slope_percent'
+r.slope.aspect(elevation=elev_raster, slope=output_slope_map, format='percent')
