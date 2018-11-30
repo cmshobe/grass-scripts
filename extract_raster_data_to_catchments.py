@@ -61,3 +61,10 @@ relief_5km_prefix = 'relief_5km'
 v.rast_stats(verbose=True, map=basins, raster=relief_5km_map, 
              column_prefix=relief_5km_prefix, 
              method=stats_list)
+
+#now extract elevation statistics for each basin
+elev_map = 'small_crop_buffer'
+elev_prefix = 'elev'
+v.rast_stats(verbose=True, map=basins, raster=elev_map,
+             column_prefix=elev_prefix,
+             method=stats_list)
