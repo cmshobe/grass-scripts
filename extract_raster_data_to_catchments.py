@@ -5,7 +5,9 @@ Created on Tue Nov 27 11:35:45 2018
 
 @author: charlie
 
-script to extract statistics of slope, relief, ksn, and %kjf to catchments 
+script to extract statistics of slope and relief to study subcatchments .
+See also "extract_vector_data_to_catchments.py"
+for extraction of ksn and %kjf data
 """
 from grass.pygrass.modules.shortcuts import vector as v
 
