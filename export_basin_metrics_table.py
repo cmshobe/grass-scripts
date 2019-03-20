@@ -10,6 +10,6 @@ Script to export study subcatchment attribute table to .csv
 from grass.pygrass.modules.shortcuts import database as db
 
 basins = 'all_unique_wsheds_info'
-csv_name = 'basins_data.csv'
+csv_name = 'basins_data_with_intra_relief.csv'
 
 db.out_ogr(input=basins, output=csv_name)
